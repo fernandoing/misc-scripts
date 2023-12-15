@@ -8,9 +8,11 @@ else
 fi
 
 # get tfenv tool for selecting TF version
+rm -rf ~/.tfenv
 git clone https://github.com/tfutils/tfenv.git ~/.tfenv
 
 # link tfenv to the bin
+rm -rf ~/bin
 mkdir ~/bin
 ln -s ~/.tfenv/bin/* ~/bin/
 
